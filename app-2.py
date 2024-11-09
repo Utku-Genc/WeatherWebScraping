@@ -7,9 +7,9 @@ import datetime
 import time
 import csv
 
-# tarih aralığı
+# tarih aralığı 2018-10-23
 city = "kocaeli" 
-start_date = datetime.date(2017, 12, 5)  # Başlangıç tarihi 2011-01-01 normalde. Veri çekerken yandaki tarihte hata yedim 2017-12-05 Bu tarihten tekrar başlattım
+start_date = datetime.date(2018, 10, 24)  # Başlangıç tarihi 2011-01-01 normalde. Veri çekerken yandaki tarihte hata yedim (2017-12-05 , 2018-10-23) Bu tarihten tekrar başlattım
 end_date = datetime.date(2024, 10, 31)    # Bitiş tarihi
 
 # ChromeOptions ayarlama (İncesiz mod)
