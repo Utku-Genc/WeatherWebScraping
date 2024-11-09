@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # 1. CSV dosyasını yükleme
-data = pd.read_csv("tr_weather_data_filled_new.csv")
+data = pd.read_csv("İslenmisAnaVeri/tr_weather_data_filled_new.csv")
 
 # 2. Sütun isimlerindeki boşlukları temizleme
 data.columns = data.columns.str.strip()
