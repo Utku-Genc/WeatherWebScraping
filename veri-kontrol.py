@@ -3,19 +3,20 @@ import pandas as pd
 # Doldurulmuş veriyi okuma
 df = pd.read_csv("tr_weather_data_filled.csv")
 
-# Sütunlardaki boş (NaN) değer sayısını al
+# Sütünlarda ki boş değer sayısını hesaplama
 nan_values = df.isnull().sum()
 
-# Toplam boş değer sayısını al
+# Toplam boş değer sayısını hesaplama
 total_nan_values = nan_values.sum()
 
-# Sütunlardaki boş değer sayısını yazdır
+# Sütunlardaki boş değer sayısı
 print("Sütunlardaki boş değer sayıları:\n", nan_values)
 
-# Toplam boş değer sayısını yazdır
+# Toplam boş değer sayısı
 print("\nToplam boş değer sayısı:", total_nan_values)
 
-# Eğer tüm DataFrame'deki boş değer olup olmadığını kontrol etmek isterseniz
+
+# En son mesaj boş var-yok
 if df.isnull().values.any():
     print("Veri setinde boş değerler var.")
 else:

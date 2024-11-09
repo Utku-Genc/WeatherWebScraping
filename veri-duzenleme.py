@@ -1,6 +1,5 @@
 import pandas as pd
 
-# CSV dosyasını oku
 df = pd.read_csv("merged_weather_data.csv")
 
 # Rüzgar yönü Türkçeye çevirme
@@ -28,10 +27,10 @@ wind_translation = {
 
 df["Wind"] = df["Wind"].replace(wind_translation)
 
-# Time sütununu 24 saatlik sisteme çevirmek
+# Time sütununu 24 saatlik sisteme çevirme
 df["Time"] = pd.to_datetime(df["Time"], format='%I:%M %p').dt.strftime('%H:%M')
 
-# Sıcaklık ve çiğ noktasını Celsius'a çevirmek
+# Sıcaklık ve çiğ noktasını Celsius'a çevirme
 def fahrenheit_to_celsius(fahrenheit):
     return (fahrenheit - 32) * 5.0/9.0
 
@@ -41,9 +40,9 @@ df["Dew Point"] = df["Dew Point"].apply(lambda x: f"{fahrenheit_to_celsius(float
 # Nem değeriniden % kaldırma
 df["Humidity"] = df["Humidity"].apply(lambda x: x.replace(" %", "") if "%" in x else x)
 
-# Wind Speed ve Pressure değerlerini sayıya çevirme
+# Rüzgar hızında küsüratlı sayı olmadığı için direkt metni kaldırttık
 df["Wind Speed"] = df["Wind Speed"].apply(lambda x: ''.join(filter(str.isdigit, x)))
-# Basınç verisini işleme (in birimini koruyarak virgüllü sayıya dönüştürme)
+# Basınç in ksımını kaldırma için sayı ile kelimeyi böldük
 df["Pressure"] = df["Pressure"].apply(lambda x: f"{float(x.split()[0]):.2f}" if isinstance(x, str) else x)
 
 # Hava durumunu türkçeye çevirme
@@ -111,7 +110,6 @@ df.rename(columns={
     "Condition": "Condition (Durum)"
 }, inplace=True)
 
-# Veriyi düzenledikten sonra CSV dosyasına kaydet
 df.to_csv("tr_weather_data.csv", index=False)
 
 print("Veri düzenleme işlemi tamamlandı ve 'tr_weather_data.csv' olarak kaydedildi.")
