@@ -11,14 +11,13 @@ city = "kocaeli"
 start_date = datetime.date(2011, 1, 1)  # Başlangıç tarihi
 end_date = datetime.date(2024, 1, 1)    # Bitiş tarihi
 
-# ChromeOptions ayarlama (İncesiz mod)
 chrome_options = Options()
 chrome_options.add_argument("--incognito")
 
 # WebDriver başlatma
 driver = webdriver.Chrome(options=chrome_options)
 
-# Tarih aralığında döngü başlat
+# Tarih aralığında döngüsü
 date = start_date
 while date <= end_date:
     formatted_date = date.strftime("%Y-%m-%d")  # YYYY-MM-DD formatında tarih
@@ -43,12 +42,12 @@ while date <= end_date:
         if table:
             print("Tablo bulundu, veri çekiliyor...")
 
-            # Sütun adlarını al
+            # Sütun adları
             headers = driver.find_elements(By.XPATH, '//*[@id="inner-content"]/div[2]/div[1]/div[5]/div[1]/div/lib-city-history-observation/div/div[2]/table/thead/tr/th')
             header_names = [header.text for header in headers]
             print("Sütun Adları:", header_names)
 
-            # Tablo verilerini al
+            # Tablo verileri
             rows = driver.find_elements(By.XPATH, '//*[@id="inner-content"]/div[2]/div[1]/div[5]/div[1]/div/lib-city-history-observation/div/div[2]/table/tbody/tr')
             
             table_data = []

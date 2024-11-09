@@ -7,20 +7,20 @@ import datetime
 import time
 import csv
 
-# tarih aralığı 2018-10-23
+# tarih aralığı 
 city = "kocaeli" 
 start_date = datetime.date(2024, 5, 12)  # Başlangıç tarihi 2011-01-01 normalde. Veri çekerken yandaki tarihte hata yedim (2017-12-05 , 2018-10-23, 2024-05-11) Bu tarihten tekrar başlattım
 end_date = datetime.date(2024, 10, 31)    # Bitiş tarihi
 
-# ChromeOptions ayarlama (İncesiz mod)
+# Chrome ayarları
 chrome_options = Options()
-chrome_options.add_argument("--incognito")
+chrome_options.add_argument("--incognito") # Gizli mod
 
 # WebDriver başlatma
 driver = webdriver.Chrome(options=chrome_options)
 
 # CSV dosyasını açma ve başlıkları yazma
-with open("weather_data_from_2024-05-11.csv", "w", newline="", encoding="utf-8") as csv_file:
+with open("weather_data_from_2024-05-12.csv", "w", newline="", encoding="utf-8") as csv_file:
     csv_writer = csv.writer(csv_file)
     
     # CSV başlıkları yazma
@@ -41,7 +41,7 @@ with open("weather_data_from_2024-05-11.csv", "w", newline="", encoding="utf-8")
     # Tarih aralığında döngü başlat
     date = start_date
     while date <= end_date:
-        formatted_date = date.strftime("%Y-%m-%d")  # YYYY-MM-DD formatında tarih
+        formatted_date = date.strftime("%Y-%m-%d")  # Yıl ay gün formatıolacak şekle gteirme
         url = f"https://www.wunderground.com/history/daily/tr/{city}/date/{formatted_date}"
         
         # Web sayfasını açma
@@ -50,7 +50,7 @@ with open("weather_data_from_2024-05-11.csv", "w", newline="", encoding="utf-8")
         
         # Sayfanın tamamen yüklenmesini bekleme
         try:
-            # Tablo yüklendiğinde devam et
+            # Tablo yüklendiğinde devam et 30 sny süre verdik 
             WebDriverWait(driver, 30).until(
                 EC.presence_of_element_located(
                     (By.XPATH, '//*[@id="inner-content"]/div[2]/div[1]/div[5]/div[1]/div/lib-city-history-observation/div/div[2]/table')
@@ -83,7 +83,7 @@ with open("weather_data_from_2024-05-11.csv", "w", newline="", encoding="utf-8")
         
         # Bir sonraki güne geç
         date += datetime.timedelta(days=1)
-        time.sleep(2)  # 2 saniye bekleme (sunucuya aşırı yük bindirmemek için)
+        time.sleep(2)  # 2 saniye bekleme (siteden engel ymemek için)
 
 # Tarayıcıyı kapat
 driver.quit()
