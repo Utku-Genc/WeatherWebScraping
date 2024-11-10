@@ -12,11 +12,11 @@ Aşağıdaki komutları sırasıyla terminale yazarak projeyi klonlayın:
 ```bash
 git clone https://github.com/Utku-Genc/WeatherWebScraping.git
 ```
-Eğer ilk komutu çalıştırdığınızda bir hata almadıysanız. Aşağıdaki kodu terminale yazarak projenin bulunduğu dizine geçme işlemini yapabiliriz.
+Eğer ilk komutu çalıştırdığınızda bir hata almadıysanız aşağıdaki kodu terminale yazarak projenin bulunduğu dizine geçme işlemini yapabiliriz.
 ```bash
 cd WeatherWebScraping
 ```
-Hata almadan işlemi tamamladıysanız. Aşağıda belirtilen gereksinimleri cihazınıza kurunuz. <br>
+Hata almadan işlemi tamamladıysanız aşağıda belirtilen gereksinimleri cihazınıza kurunuz. <br>
 Eğer yukarda ki komutu çalıştırırken hata aldıysanız projenin kurulumu doğru yapılamamış demektir. Tekrar ilk adımı deneyiniz. 
 
 ### 2. Gereksinimler
