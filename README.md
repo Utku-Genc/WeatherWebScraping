@@ -17,7 +17,7 @@ Eğer ilk komutu çalıştırdığınızda bir hata almadıysanız aşağıdaki 
 cd WeatherWebScraping
 ```
 Hata almadan işlemi tamamladıysanız aşağıda belirtilen gereksinimleri cihazınıza kurunuz. <br>
-Eğer yukarda ki komutu çalıştırırken hata aldıysanız projenin kurulumu doğru yapılamamış demektir. Tekrar ilk adımı deneyiniz. 
+Eğer yukardaki komutu çalıştırırken hata aldıysanız projenin kurulumu doğru yapılamamış demektir. Tekrar ilk adımı deneyiniz. 
 
 ### 2. Gereksinimler
 
