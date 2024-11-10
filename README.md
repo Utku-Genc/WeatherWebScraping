@@ -186,3 +186,8 @@ Verileri mevsimsellik, trend ve rastlantısallık gibi bileşenlere ayırmak iç
 5.  **Sonuç**: Bu işlem sonucunda, orijinal, trend, mevsimsellik ve rastlantısallık verileriyle 8 farklı grafik elde edilecektir.
 
 ![9](https://github.com/user-attachments/assets/7c93a742-b536-4c23-9a4c-87ce99b9c1db)
+
+
+## Ekler
+Proje Raporu: [Rapor](Link Gelicek)
+Proje Kapsamında Toplanan Veriler: [Veri Seti](https://git-scm.com/) 
