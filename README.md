@@ -190,4 +190,5 @@ Verileri mevsimsellik, trend ve rastlantısallık gibi bileşenlere ayırmak iç
 
 ## Ekler
 Proje Raporu: [Rapor](Link Gelicek)
+<br>
 Proje Kapsamında Toplanan Veriler: [Veri Seti](https://git-scm.com/) 
