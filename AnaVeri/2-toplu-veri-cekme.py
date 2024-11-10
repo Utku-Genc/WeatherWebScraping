@@ -9,7 +9,7 @@ import csv
 
 # tarih aralığı 
 city = "kocaeli" 
-start_date = datetime.date(2024, 5, 12)  # Başlangıç tarihi 2011-01-01 normalde. Veri çekerken yandaki tarihte hata yedim (2017-12-05 , 2018-10-23, 2024-05-11) Bu tarihten tekrar başlattım
+start_date = datetime.date(2024, 5, 15)  # Başlangıç tarihi 2011-01-01 normalde. Veri çekerken yandaki tarihte hata yedim (2017-12-05 , 2018-10-23, 2024-05-11) Bu tarihten tekrar başlattım
 end_date = datetime.date(2024, 10, 31)    # Bitiş tarihi
 
 # Chrome ayarları
@@ -20,7 +20,7 @@ chrome_options.add_argument("--incognito") # Gizli mod
 driver = webdriver.Chrome(options=chrome_options)
 
 # CSV dosyasını açma ve başlıkları yazma
-with open("weather_data_from_2024-05-12.csv", "w", newline="", encoding="utf-8") as csv_file:
+with open(f"AnaVeri/{city}_weather_data_from_{start_date}.csv", "w", newline="", encoding="utf-8") as csv_file:
     csv_writer = csv.writer(csv_file)
     
     # CSV başlıkları yazma
