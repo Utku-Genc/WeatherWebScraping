@@ -118,7 +118,7 @@ Birleştirilmiş veriyi işlemek için `İslenmisAnaVeri/1-veri-duzenleme.py` do
     
 3.  **Sonuç**: Bu işlem, `merged_weather_data.csv` dosyasındaki metinleri temizleyecek, Türkçeleştirecek ve Fahrenheit cinsinden gelen sıcaklıkları Celsius'a çevirecektir. Sonuç `IslenmisAnaVeri/tr_weather_data.csv` olarak kaydedilecektir Farkını aşağıda görebilirsiniz.
  
- ![4](https://github.com/user-attachments/assets/5413969f-f1f4-413f-8c33-ce04c928cc71)
+![4](https://github.com/user-attachments/assets/5413969f-f1f4-413f-8c33-ce04c928cc71)
 
 ![5](https://github.com/user-attachments/assets/7e87b7d6-fdc8-4728-960b-cc5f2ebd1e94)
 
