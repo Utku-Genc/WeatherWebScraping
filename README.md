@@ -51,12 +51,14 @@ Aşağıda projeyi çalıştırmak için izlemeniz gereken adımlar bulunmaktad�
 
 ### 1. Veri Toplama Kısmı
 
+
 #### 1.1. Tekil Veri Çekme
 İlk olarak, belirli bir şehirdeki güncel hava durumu verisini kontrol etmek için `1-tekil-veri-cekme.py` dosyasını çalıştıracağız.
 
 1. **Dosyayı açın**: `AnaVeri/1-tekil-veri-cekme.py`
 2. **Şehir ismini belirleyin**: `city` değişkenine test etmek istediğiniz şehri yazın.
-	1.resim gelecek
+	
+![1](https://github.com/user-attachments/assets/934f5a12-5636-4c2d-85f3-4feae4f7c660)
 
 3.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
     ```bash
@@ -72,13 +74,15 @@ Eğer o günün verisi mevcutsa, daha geniş bir tarih aralığı ile veri topla
 1.  **Dosyayı açın**: `AnaVeri/2-toplu-veri-cekme.py`
 2.  **Şehir ismini belirleyin**: `city` değişkenine şehir ismini yazın.
 3.  **Tarih aralığını belirleyin**: `start_date` ve `end_date` değişkenlerine veri çekmek istediğiniz tarih aralığını yazın.
-    2.resim gelecek
-4.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
+
+    ![2](https://github.com/user-attachments/assets/ab2ec499-de62-4ac8-941f-766b9be1e27b)
+
+5.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
      ```bash
     python AnaVeri/2-toplu-veri-cekme.py 
     ```
     
-5.  **Sonuç**: Kod çalıştıktan sonra, `AnaVeri` dizininde `{city}_weather_data_from_{start_date}.csv` adıyla bir veri dosyası oluşturulacaktır.
+6.  **Sonuç**: Kod çalıştıktan sonra, `AnaVeri` dizininde `{city}_weather_data_from_{start_date}.csv` adıyla bir veri dosyası oluşturulacaktır.
 
 #### 1.3. Veri Birleştirme
 
@@ -86,7 +90,9 @@ Eğer parça parça veri çektiyseniz, farklı dosyaları birleştirmek için `3
 
 1.  **Dosyayı açın**: `AnaVeri/3-veri-birlestirme.py`
 2.  **Birleştirilecek dosyaları belirleyin**: `files` klasörüne birleştirilmesi gereken dosyaları ekleyin.
-		3. resim gelecek
+		
+![3](https://github.com/user-attachments/assets/2cb767b8-7cd4-48d6-99b6-7181db96690e)
+
 3.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
     
 
@@ -111,7 +117,10 @@ Birleştirilmiş veriyi işlemek için `İslenmisAnaVeri/1-veri-duzenleme.py` do
     ```
     
 3.  **Sonuç**: Bu işlem, `merged_weather_data.csv` dosyasındaki metinleri temizleyecek, Türkçeleştirecek ve Fahrenheit cinsinden gelen sıcaklıkları Celsius'a çevirecektir. Sonuç `IslenmisAnaVeri/tr_weather_data.csv` olarak kaydedilecektir Farkını aşağıda görebilirsiniz.
- 4 ve 5. resim gelecek
+ 
+ ![4](https://github.com/user-attachments/assets/5413969f-f1f4-413f-8c33-ce04c928cc71)
+
+![5](https://github.com/user-attachments/assets/7e87b7d6-fdc8-4728-960b-cc5f2ebd1e94)
 
 #### 2.2. Boş Veri Doldurma
 
@@ -133,15 +142,16 @@ Boş veri olup olmadığını kontrol etmek ve eksik verileri doldurmak için `2
 1.  **Dosyayı açın**: `IslenmisAnaVeri/4-graphics.py`
 2.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
     
-    bash
-    
-    Kodu kopyala
     ```bash
 	python IslenmisAnaVeri/4-graphics.py 
     ```
     
 3.  **Sonuç**: Bu işlem, işlenmiş verilerle ilgili temel grafiklerin gösterilmesini sağlar. Örnek grafiklere aşağıda görebilirsiniz.
-6-7 buraya
+
+![6](https://github.com/user-attachments/assets/d5229d76-ec32-453b-8d87-51d6de5cf74a)
+
+![7](https://github.com/user-attachments/assets/491e9a11-73be-4790-8385-fd476ccb048e)
+
 
 ### 3. Yeni Veri Örneklemesi
 
@@ -157,7 +167,8 @@ Boş veri olup olmadığını kontrol etmek ve eksik verileri doldurmak için `2
     ```
     
 3.  **Sonuç**: Bu işlem, 30 dakikalık veri dosyasından günlük veri dosyasına dönüştürülmüş yeni bir dosya oluşturur. Küçük bir örnek aşağıdadır.
-8.resim buraya
+
+![8](https://github.com/user-attachments/assets/b069d305-b243-4c60-b287-cad9f8e4093b)
 
 #### 3.2. Decomposition (Bileşenlere Ayrılma)
 
@@ -173,4 +184,5 @@ Verileri mevsimsellik, trend ve rastlantısallık gibi bileşenlere ayırmak iç
     ```
 
 5.  **Sonuç**: Bu işlem sonucunda, orijinal, trend, mevsimsellik ve rastlantısallık verileriyle 8 farklı grafik elde edilecektir.
-9.resim buraya
+
+![9](https://github.com/user-attachments/assets/7c93a742-b536-4c23-9a4c-87ce99b9c1db)
