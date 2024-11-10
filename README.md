@@ -75,7 +75,8 @@ Eğer o günün verisi mevcutsa, daha geniş bir tarih aralığı ile veri topla
 2.  **Şehir ismini belirleyin**: `city` değişkenine şehir ismini yazın.
 3.  **Tarih aralığını belirleyin**: `start_date` ve `end_date` değişkenlerine veri çekmek istediğiniz tarih aralığını yazın.
 
-![2](https://github.com/user-attachments/assets/ab2ec499-de62-4ac8-941f-766b9be1e27b)
+![2](https://github.com/user-attachments/assets/dfd208d8-20e6-4a57-83fc-da177b6bb7e0)
+
 
 5.  **Kodu çalıştırın**: Terminal veya komut satırında aşağıdaki komutu çalıştırın:
      ```bash
