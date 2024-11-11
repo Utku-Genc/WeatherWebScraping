@@ -14,7 +14,7 @@ formatted_date = today.strftime("%Y-%m-%d")  # YYYY-MM-DD formatına getirme
 city = "kocaeli"  # Şehir adını burada değiştirin
 url = f"https://www.wunderground.com/history/daily/tr/{city}/date/{formatted_date}"
 
-# ChromeOptions ayarlama (İncesiz mod)
+# Chrome ayarları
 chrome_options = Options()
 chrome_options.add_argument("--incognito")
 
