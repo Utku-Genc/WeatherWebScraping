@@ -193,3 +193,5 @@ Verileri mevsimsellik, trend ve rastlantısallık gibi bileşenlere ayırmak iç
 Proje Raporu: [Rapor](https://github.com/user-attachments/files/17698423/yazlab-rapor-sonhal.docx)
 <br>
 Proje Kapsamında Toplanan Veriler: [Veri Seti](https://drive.google.com/drive/u/0/folders/1eSPkRUiUx6AkxZYrtghkakOASbia3wuu)
+<br>
+Veriler ait Excel Tablosu: [EXCEL](https://docs.google.com/spreadsheets/d/1Rg4cs4zh44YMo01i1jVTn9LwI-rLiVgC/edit?gid=1587810924#gid=1587810924)
