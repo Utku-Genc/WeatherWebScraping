@@ -190,7 +190,7 @@ Verileri mevsimsellik, trend ve rastlantısallık gibi bileşenlere ayırmak iç
 
 
 ## Ekler
-Proje Raporu: [Rapor](https://github.com/user-attachments/files/17698577/Rapor.docx)
+Proje Raporu: [Rapor](https://github.com/user-attachments/files/17699832/Rapor.docx)
 <br>
 Proje Kapsamında Toplanan Veriler: [Veri Seti](https://drive.google.com/drive/u/0/folders/1eSPkRUiUx6AkxZYrtghkakOASbia3wuu)
 <br>
